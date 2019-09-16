@@ -1,0 +1,45 @@
+dependencies: \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/node_modules/react-native/React/CxxBridge/NSDataBigString.mm \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Target\ Support\ Files/React-Core/React-Core-prefix.pch \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/node_modules/react-native/React/CxxBridge/NSDataBigString.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Headers/Public/React-cxxreact/cxxreact/JSBigString.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Exception.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Conv.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Headers/Public/DoubleConversion/double-conversion/double-conversion.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Headers/Public/DoubleConversion/double-conversion/utils.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Demangle.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/FBString.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/CppAttributes.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Portability.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/portability/Config.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/CPortability.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Traits.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/hash/Hash.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Utility.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/functional/ApplyTuple.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/functional/Invoke.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Preprocessor.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/hash/SpookyHashV1.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/hash/SpookyHashV2.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/lang/Bits.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/ConstexprMath.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/lang/Assume.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/portability/Builtins.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/lang/Exception.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/memory/Malloc.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/memory/detail/MallocImpl.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Expected.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Likely.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Optional.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Unit.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/lang/ColdClass.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/Range.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/portability/Constexpr.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/portability/String.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/CpuId.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/detail/RangeCommon.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Headers/Public/glog/glog/logging.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Headers/Public/glog/glog/log_severity.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Headers/Public/glog/glog/vlog_is_on.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/detail/RangeSse42.h \
+  /Users/jaimejosecuevasanchez/Sites/incluyemeapp/ios/Pods/Folly/folly/portability/Math.h

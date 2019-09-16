@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>logFormatVersion</key>
+	<integer>10</integer>
+	<key>logs</key>
+	<dict>
+		<key>0777757F-2832-4B42-8E56-1930D711FAF1</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>0777757F-2832-4B42-8E56-1930D711FAF1.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>incluyemeapp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>incluyemeapp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace incluyemeapp with scheme incluyemeapp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>590267859.50405204</real>
+			<key>timeStoppedRecording</key>
+			<real>590267861.15338802</real>
+			<key>title</key>
+			<string>Building workspace incluyemeapp with scheme incluyemeapp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>0777757F-2832-4B42-8E56-1930D711FAF1</string>
+		</dict>
+		<key>63A88DDF-0D4A-40CC-B2B8-C2AEBECEE78D</key>
+		<dict>
+			<key>className</key>
+			<string>IDECommandLineBuildLog</string>
+			<key>documentTypeString</key>
+			<string>&lt;nil&gt;</string>
+			<key>domainType</key>
+			<string>Xcode.IDEActivityLogDomainType.BuildLog</string>
+			<key>fileName</key>
+			<string>63A88DDF-0D4A-40CC-B2B8-C2AEBECEE78D.xcactivitylog</string>
+			<key>primaryObservable</key>
+			<dict>
+				<key>highLevelStatus</key>
+				<string>W</string>
+			</dict>
+			<key>schemeIdentifier-containerName</key>
+			<string>incluyemeapp project</string>
+			<key>schemeIdentifier-schemeName</key>
+			<string>incluyemeapp</string>
+			<key>schemeIdentifier-sharedScheme</key>
+			<integer>1</integer>
+			<key>signature</key>
+			<string>Building workspace incluyemeapp with scheme incluyemeapp and configuration Debug</string>
+			<key>timeStartedRecording</key>
+			<real>590258355.14105999</real>
+			<key>timeStoppedRecording</key>
+			<real>590258359.13747895</real>
+			<key>title</key>
+			<string>Building workspace incluyemeapp with scheme incluyemeapp and configuration Debug</string>
+			<key>uniqueIdentifier</key>
+			<string>63A88DDF-0D4A-40CC-B2B8-C2AEBECEE78D</string>
+		</dict>
+	</dict>
+</dict>
+</plist>
