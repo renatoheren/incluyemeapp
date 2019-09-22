@@ -6,7 +6,7 @@
 	<dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		scHqagC8ssmCrbv6Yq/A6PE2ykg=
+		13Vk9dcEgjotVQL0n2umMevPcbs=
 		</data>
 		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
 		<data>
@@ -71,7 +71,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		8zSTBujJml/kQCDgcgBpdftssZc=
+		wiKaz0c1EJXcL+XlSF047Y83qkI=
 		</data>
 		<key>PkgInfo</key>
 		<data>
@@ -83,19 +83,19 @@
 		</data>
 		<key>PlugIns/incluyemeappTests.xctest.dSYM/Contents/Resources/DWARF/incluyemeappTests</key>
 		<data>
-		qW1XBcWkBiqfcSKed5UXMC0+7/I=
+		pwOPy5XTc01qIkAB23cHnTWy1Ns=
 		</data>
 		<key>PlugIns/incluyemeappTests.xctest/Info.plist</key>
 		<data>
-		LPJb9aNVU+24QQOMjYOm7IydoJs=
+		agkqUCXqtqgwd3JzgnODRNGXUtY=
 		</data>
 		<key>PlugIns/incluyemeappTests.xctest/_CodeSignature/CodeResources</key>
 		<data>
-		/928MxCnpznPUP1t17oPxbBLpN0=
+		ynxImBMMhkbH5TeVa+WbnVdoas4=
 		</data>
 		<key>PlugIns/incluyemeappTests.xctest/incluyemeappTests</key>
 		<data>
-		FI8fafZW1kiZT3KAW4KTxtqcbWQ=
+		Jv18MEvSi9idPpYkwwejhEFKkUo=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -104,11 +104,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			scHqagC8ssmCrbv6Yq/A6PE2ykg=
+			13Vk9dcEgjotVQL0n2umMevPcbs=
 			</data>
 			<key>hash2</key>
 			<data>
-			xYHLvGXcVJp6CZD6u6NeDV2C9G5pP1NqV9KwkKchVak=
+			6OXvYUJnN93u7FmTu1UAig0fOBP4cRNPrzKKdmkk4xw=
 			</data>
 		</dict>
 		<key>Frameworks/XCTAutomationSupport.framework/Info.plist</key>
@@ -282,44 +282,44 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qW1XBcWkBiqfcSKed5UXMC0+7/I=
+			pwOPy5XTc01qIkAB23cHnTWy1Ns=
 			</data>
 			<key>hash2</key>
 			<data>
-			LqKBo1RGgPEZlwJZFVuozUir2vORF8Zg2KFOKfTtgOw=
+			BVeqlxhK3Pda7VQW4qrxgXZ1UkBkoVdE5Tbet5WzBM4=
 			</data>
 		</dict>
 		<key>PlugIns/incluyemeappTests.xctest/Info.plist</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			LPJb9aNVU+24QQOMjYOm7IydoJs=
+			agkqUCXqtqgwd3JzgnODRNGXUtY=
 			</data>
 			<key>hash2</key>
 			<data>
-			DV7/AUaCqz+1Q2crfhbrAl6oMSoZ09MSwI4DSHuRg9E=
+			NGn2PPlS/T/cY5rohFrY0k69HYia3l31BLUZ+MyQM1w=
 			</data>
 		</dict>
 		<key>PlugIns/incluyemeappTests.xctest/_CodeSignature/CodeResources</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			/928MxCnpznPUP1t17oPxbBLpN0=
+			ynxImBMMhkbH5TeVa+WbnVdoas4=
 			</data>
 			<key>hash2</key>
 			<data>
-			MvE1vL4WWiJ57WBO654hnrkRYzDmHd4fTKBtqEOz3cE=
+			HhUsyAzB2GHRZl1J7oz6LEq20FUuDDK0XCcfB76wbqQ=
 			</data>
 		</dict>
 		<key>PlugIns/incluyemeappTests.xctest/incluyemeappTests</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			FI8fafZW1kiZT3KAW4KTxtqcbWQ=
+			Jv18MEvSi9idPpYkwwejhEFKkUo=
 			</data>
 			<key>hash2</key>
 			<data>
-			VTzT0dAR5J7gi9kU/Y6NDVAOh8eRa53wDay1NS58xek=
+			80NPO0/tihgEmwdWL+aY2G4Vq+axtEa4g8532J3yKNU=
 			</data>
 		</dict>
 	</dict>

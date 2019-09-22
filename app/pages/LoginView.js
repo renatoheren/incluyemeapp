@@ -1,6 +1,6 @@
 import React, { PureComponent } from 'react';
 import SafeAreaView from 'react-native-safe-area-view';
-import { StyleSheet, View, TextInput, Text } from 'react-native';
+import { StyleSheet, View, TextInput, Text, Alert } from 'react-native';
 import Button from '../components/Button';
 import AsyncStorage from '@react-native-community/async-storage';
 import {login} from '../services/api';
@@ -10,21 +10,7 @@ class LoginView extends PureComponent {
     codigo: "",
     password: ""
   }
-
-  componentDidMount() {
-    console.info("LoginView componentDidMount.");
-  }
   
-  isLogin = async () => {
-    console.info("Validar si el usuario ya ha guardado su sesion.");
-    try {
-      const value = await AsyncStorage.getItem('@alumno')
-      return value;
-    } catch(e) {
-      
-    }
-  }
-
   loginAction = async () => {
     var codigo = this.state.codigo;
     var password = this.state.password;
@@ -34,6 +20,15 @@ class LoginView extends PureComponent {
           this.setAlumno(codigo).then( () => {
             this.props.navigation.navigate('Menu');
           } )
+        }else{
+          Alert.alert(
+            'Error',
+            'Usuario o contraseña incorrectos.',
+            [
+              {text: 'OK', onPress: () => console.log('OK Pressed')},
+            ],
+            {cancelable: false},
+          );
         }
       } );
     }
@@ -43,7 +38,7 @@ class LoginView extends PureComponent {
     try {
       await AsyncStorage.setItem('@alumno', codigo)
     } catch (e) {
-      // saving error
+      console.log(e);
     }
   }
 
@@ -53,7 +48,7 @@ class LoginView extends PureComponent {
         <Text style={styles.text}>INGRESA A TU CUENTA. DESLIZA TU DEDO SOBRE LA PANTALLA Y TOCA DOS VECES LA PANTALLA PARA ESCOGER LA OPCIÓN.</Text>
         <View>
           <TextInput autoCapitalize="none" onChangeText={(text) => this.setState({codigo: text})} style={styles.textinput} placeholder={"CODIGO"} />
-          <TextInput autoCapitalize="none" onChangeText={(text) => this.setState({password: text})} style={styles.textinput} placeholder={"CONTRASEÑA"} />
+          <TextInput secureTextEntry={true} autoCapitalize="none" onChangeText={(text) => this.setState({password: text})} style={styles.textinput} placeholder={"CONTRASEÑA"} />
         </View>
         <Button onPress={this.loginAction} label={'CONTINUAR'} />
       </SafeAreaView>

@@ -1,4 +1,4 @@
-import { createAppContainer} from 'react-navigation';
+import { createAppContainer, createSwitchNavigator } from 'react-navigation';
 import { createStackNavigator } from 'react-navigation-stack';
 import MainView from './pages/MainView';
 import LoginView from './pages/LoginView';
@@ -10,10 +10,9 @@ import NotasView from './pages/NotasView';
 import PagosPendientesView from './pages/PagosPendientesView';
 import PagosRealizadosView from './pages/PagosRealizadosView';
 import PagosView from './pages/PagosView';
+import AuthLoadingView from './pages/AuthLoadingView';
 
-const MainNavigator = createStackNavigator({
-  Main: { screen: MainView },
-  Login: { screen: LoginView },
+const AppStack = createStackNavigator({ 
   Menu: { screen: MenuView },
   Cursos: { screen: CursosView },
   Horario: { screen: HorarioView },
@@ -25,7 +24,22 @@ const MainNavigator = createStackNavigator({
 }, {
   headerMode: 'none',
 });
+const AuthStack = createStackNavigator({ 
+  Main: { screen: MainView },
+  Login: { screen: LoginView },
+ }, {
+  headerMode: 'none',
+});
 
-const App = createAppContainer(MainNavigator);
-
-export default App;
+export default createAppContainer(
+  createSwitchNavigator(
+    {
+      AuthLoading: AuthLoadingView,
+      App: AppStack,
+      Auth: AuthStack,
+    },
+    {
+      initialRouteName: 'AuthLoading',
+    }
+  )
+);
