@@ -1,6 +1,7 @@
 import React, { PureComponent } from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
+import { checkInternet } from '../services/internet';
 
 class AuthLoadingView extends PureComponent {
   componentDidMount() {

@@ -2,6 +2,7 @@ import React, { PureComponent } from 'react';
 import SafeAreaView from 'react-native-safe-area-view';
 import { StyleSheet, View, Text } from 'react-native';
 import Button from '../components/Button';
+import { checkInternet } from '../services/internet';
 
 class HorarioDiaView extends PureComponent {
   state = {

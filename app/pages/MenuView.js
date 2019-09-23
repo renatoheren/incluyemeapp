@@ -3,8 +3,13 @@ import SafeAreaView from 'react-native-safe-area-view';
 import { StyleSheet, Text } from 'react-native';
 import Button from '../components/Button';
 import AsyncStorage from '@react-native-community/async-storage';
+import { checkInternet } from '../services/internet';
+import { NavigationEvents } from 'react-navigation';
 
-class MenuView extends PureComponent {
+class MenuView extends PureComponent {  
+  componentDidMount() {
+  }
+  
   logOut = async() => {
     await AsyncStorage.clear();
     this.props.navigation.navigate('Auth');

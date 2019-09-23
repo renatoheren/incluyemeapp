@@ -3,6 +3,7 @@ import SafeAreaView from 'react-native-safe-area-view';
 import { StyleSheet, Text } from 'react-native';
 import Button from '../components/Button';
 import {api} from '../services/api';
+import { checkInternet } from '../services/internet';
 
 class PagosView extends PureComponent {
   state = {

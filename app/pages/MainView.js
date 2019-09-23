@@ -2,8 +2,12 @@ import React, { PureComponent } from 'react';
 import SafeAreaView from 'react-native-safe-area-view';
 import { Text, StyleSheet } from 'react-native';
 import Button from '../components/Button';
+import { checkInternet } from '../services/internet';
 
 class MainView extends PureComponent {
+  componentDidMount() {
+  }
+  
   render() {
     return (
       <SafeAreaView style={styles.container} forceInset={{ bottom: 'never' }}>

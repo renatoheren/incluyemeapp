@@ -2,8 +2,12 @@ import React, { PureComponent } from 'react';
 import SafeAreaView from 'react-native-safe-area-view';
 import Button from '../components/Button';
 import { StyleSheet, Text, View } from 'react-native';
+import { checkInternet } from '../services/internet';
 
 class PagosRealizadosView extends PureComponent {
+  componentDidMount() {
+  }
+  
   render() {
     const { navigation } = this.props;
     const pagos = navigation.getParam('pagos', []);

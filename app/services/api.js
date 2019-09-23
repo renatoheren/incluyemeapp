@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-community/async-storage';
 
-const URL = "http://137.135.67.199";
+const URL = "http://40.117.98.54";
 
 getAlumno = async () => {
   try {

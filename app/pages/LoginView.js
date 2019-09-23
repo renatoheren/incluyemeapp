@@ -4,11 +4,15 @@ import { StyleSheet, View, TextInput, Text, Alert } from 'react-native';
 import Button from '../components/Button';
 import AsyncStorage from '@react-native-community/async-storage';
 import {login} from '../services/api';
+import { checkInternet } from '../services/internet';
 
 class LoginView extends PureComponent {
   state = {
     codigo: "",
     password: ""
+  }
+
+  componentDidMount() {
   }
   
   loginAction = async () => {
