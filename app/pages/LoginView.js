@@ -4,7 +4,7 @@ import { StyleSheet, View, TextInput, Text, Alert } from 'react-native';
 import Button from '../components/Button';
 import AsyncStorage from '@react-native-community/async-storage';
 import {login} from '../services/api';
-import { checkInternet } from '../services/internet';
+import Internet from '../components/Internet';
 
 class LoginView extends PureComponent {
   state = {
@@ -48,14 +48,14 @@ class LoginView extends PureComponent {
 
   render() {
     return (
-      <SafeAreaView style={styles.container} forceInset={{ bottom: 'never' }}>
+      <Internet>
         <Text style={styles.text}>INGRESA A TU CUENTA. DESLIZA TU DEDO SOBRE LA PANTALLA Y TOCA DOS VECES LA PANTALLA PARA ESCOGER LA OPCIÓN.</Text>
         <View>
           <TextInput autoCapitalize="none" onChangeText={(text) => this.setState({codigo: text})} style={styles.textinput} placeholder={"CODIGO"} />
           <TextInput secureTextEntry={true} autoCapitalize="none" onChangeText={(text) => this.setState({password: text})} style={styles.textinput} placeholder={"CONTRASEÑA"} />
         </View>
         <Button onPress={this.loginAction} label={'CONTINUAR'} />
-      </SafeAreaView>
+      </Internet>
     )
   }
 }

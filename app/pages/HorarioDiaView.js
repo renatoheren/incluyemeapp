@@ -3,6 +3,7 @@ import SafeAreaView from 'react-native-safe-area-view';
 import { StyleSheet, View, Text } from 'react-native';
 import Button from '../components/Button';
 import { checkInternet } from '../services/internet';
+import Internet from '../components/Internet';
 
 class HorarioDiaView extends PureComponent {
   state = {
@@ -22,7 +23,7 @@ class HorarioDiaView extends PureComponent {
 
   render() {
     return (
-      <SafeAreaView style={styles.container} forceInset={{ bottom: 'never' }}>
+      <Internet>
         <Text style={styles.text}>A CONTINUACION TENDRA INFORMACION SOBRE SUS CLASES DEL DIA {this.state.day}. PARA RETROCEDER DIRIGETE A LA PARTE FINAL DE LA PANTALL  Y TOCA DOS VECES LA PANTALLA PARA ESCOGER LA OPCIÓN</Text>
         <View style={styles.cursos}>
           { this.state.clases && this.state.clases.length ? this.state.clases.map( clase => {
@@ -35,7 +36,7 @@ class HorarioDiaView extends PureComponent {
           } ) : <Text>Sin Informacion</Text> }
         </View>
         <Button onPress={() => this.props.navigation.goBack()} label={'ATRAS'} />
-      </SafeAreaView>
+      </Internet>
     )
   }
 }

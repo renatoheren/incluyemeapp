@@ -3,6 +3,7 @@ import SafeAreaView from 'react-native-safe-area-view';
 import { StyleSheet, View, Text } from 'react-native';
 import Button from '../components/Button';
 import { checkInternet } from '../services/internet';
+import Internet from '../components/Internet';
 
 class NotasView extends PureComponent {
   componentDidMount() {
@@ -11,7 +12,7 @@ class NotasView extends PureComponent {
     const { navigation } = this.props;
     const notas = navigation.getParam('notas', []);
     return (
-      <SafeAreaView style={styles.container} forceInset={{ bottom: 'never' }}>
+      <Internet>
         <Text style={styles.text}>ELIGE UNO DE TUS CURSOS DESLIZANDO EL DEDO POR LA PANTALLA.</Text>
         <View style={{marginBottom: 20}}>
           { notas && notas.length > 0 ? notas.map( nota => {
@@ -19,7 +20,7 @@ class NotasView extends PureComponent {
           } ) : <Text>SIN INFORMACIÓN</Text> }
         </View>
         <Button onPress={() => this.props.navigation.goBack()} label={'ATRAS'} />
-      </SafeAreaView>
+      </Internet>
     )
   }
 }

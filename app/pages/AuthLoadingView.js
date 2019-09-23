@@ -1,7 +1,7 @@
 import React, { PureComponent } from 'react';
 import { ActivityIndicator, View } from 'react-native';
 import AsyncStorage from '@react-native-community/async-storage';
-import { checkInternet } from '../services/internet';
+import Internet from '../components/Internet';
 
 class AuthLoadingView extends PureComponent {
   componentDidMount() {
@@ -19,9 +19,9 @@ class AuthLoadingView extends PureComponent {
 
   render() {
     return (
-    	<View>
+    	<Internet>
         <ActivityIndicator />
-      </View>
+      </Internet>
     )
   }
 }

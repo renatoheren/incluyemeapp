@@ -3,7 +3,7 @@ import SafeAreaView from 'react-native-safe-area-view';
 import { StyleSheet, Text } from 'react-native';
 import Button from '../components/Button';
 import {api} from '../services/api';
-import { checkInternet } from '../services/internet';
+import Internet from '../components/Internet';
 
 class PagosView extends PureComponent {
   state = {
@@ -31,7 +31,7 @@ class PagosView extends PureComponent {
 
   render() {
     return (
-      <SafeAreaView style={styles.container} forceInset={{ bottom: 'never' }}>
+      <Internet>
         <Text style={styles.text}>PARA ESCOGER ENTRE PAGOS PENDIENTES Y REALIZADOS, DESLIZA YU DEDO POR LA PANTALLA</Text>
         <Button disabled={this.state.disabled} onPress={() => this.props.navigation.navigate('PagosPendientes', {
           pagos: this.state.pagosPendientes
@@ -40,7 +40,7 @@ class PagosView extends PureComponent {
           pagos: this.state.pagosRealizados
         })} label={'PAGOS REALIZADOS'} />
         <Button onPress={() => this.props.navigation.goBack()} label={'ATRAS'} />
-      </SafeAreaView>
+      </Internet>
     )
   }
 }

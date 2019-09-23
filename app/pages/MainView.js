@@ -1,8 +1,7 @@
 import React, { PureComponent } from 'react';
-import SafeAreaView from 'react-native-safe-area-view';
 import { Text, StyleSheet } from 'react-native';
 import Button from '../components/Button';
-import { checkInternet } from '../services/internet';
+import Internet from '../components/Internet';
 
 class MainView extends PureComponent {
   componentDidMount() {
@@ -10,10 +9,10 @@ class MainView extends PureComponent {
   
   render() {
     return (
-      <SafeAreaView style={styles.container} forceInset={{ bottom: 'never' }}>
+      <Internet>
         <Text style={styles.text}>BIENVENIDO ALUMNO PARA OBTENER INFORMACIÓN DESLIZA TU DEDO SOBRE LA PANTALLA Y TOCA DOS VECES LA PANTALLA PARA ESCOGER LA OPCIÓN.</Text>
         <Button onPress={() => this.props.navigation.navigate('Login')} label={'CONTINUAR'} />
-      </SafeAreaView>
+      </Internet>
     )
   }
 }

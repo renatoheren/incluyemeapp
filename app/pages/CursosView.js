@@ -3,7 +3,7 @@ import SafeAreaView from 'react-native-safe-area-view';
 import { StyleSheet, Text } from 'react-native';
 import Button from '../components/Button';
 import {api} from '../services/api';
-import { checkInternet } from '../services/internet';
+import Internet from '../components/Internet';
 
 class CursosView extends PureComponent {
   state = {
@@ -45,13 +45,13 @@ class CursosView extends PureComponent {
 
   render() {
     return (
-      <SafeAreaView style={styles.container} forceInset={{ bottom: 'never' }}>
+      <Internet>
         <Text style={styles.text}>PARA ESCOGER UN DIA DE CLASE DESLIZA TU DEDO POR LA PANTALLA. PARA RETROCEDER DIRIGETE AL FINAL DE LA PANTALLA</Text>
         { this.state.cursos && this.state.cursos.length > 0 ? this.state.cursos.map( curso => {
           return <Button key={curso.id} onPress={() => this.verNotas(curso.id)} label={curso.nombre_curso} />
         } ) : <Text>SIN CURSOS</Text> }
         <Button onPress={() => this.props.navigation.goBack()} label={'ATRAS'} />
-      </SafeAreaView>
+      </Internet>
     )
   }
 }

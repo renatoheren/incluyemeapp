@@ -4,6 +4,7 @@ import { StyleSheet, Text } from 'react-native';
 import moment from "moment";
 import Button from '../components/Button';
 import {api} from '../services/api';
+import Internet from '../components/Internet';
 
 class HorarioView extends PureComponent {
   state = {
@@ -26,7 +27,7 @@ class HorarioView extends PureComponent {
 
   render() {
     return (
-      <SafeAreaView style={styles.container} forceInset={{ bottom: 'never' }}>
+      <Internet>
         <Text style={styles.text}>PARA ESCOGER UN DIA DE CLASE DESLIZA TU DEDO POR LA PANTALLA. PARA RETROCEDER DIRIGETE AL FINAL DE LA PANTALLA</Text>
         <Button disabled={this.state.clases && this.state.clases.length > 0 ? false : true} onPress={() => this.props.navigation.navigate('HorarioDia', {
           clases: this.state.clases,
@@ -53,7 +54,7 @@ class HorarioView extends PureComponent {
           day: moment(this.state.startOfWeek).add(5, 'days').format('YYYY-MM-DD')
         })} label={'SABADO'} />
         <Button onPress={() => this.props.navigation.goBack()} label={'ATRAS'} />
-      </SafeAreaView>
+      </Internet>
     )
   }
 }
