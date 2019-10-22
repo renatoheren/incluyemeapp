@@ -13,16 +13,16 @@ class PagosRealizadosView extends PureComponent {
     const pagos = navigation.getParam('pagos', []);
     return (
       <Internet>
-        <Text style={styles.text}>A LA FECHA TIENE {pagos.length} BOLETAS REALIZADAS:</Text>
+        <Text style={styles.text}>A la fecha tiene {pagos.length} boletas pagadas:</Text>
         <View style={styles.pagos}>
           { pagos && pagos.length ? pagos.map( pago => {
             return <View style={styles.pago}>
-              <Text>{pago.boleta.concepto} POR {pago.valor} SOLES QUE VENCE EL {pago.boleta.fecha_vencimiento}.</Text>
+              <Text>{pago.boleta.concepto} por {pago.valor} soles, que venció el {pago.boleta.fecha_vencimiento}.</Text>
             </View>
           } ) : <Text>Sin Informacion</Text> }
         </View>
-        <Text style={styles.pagos}>DESLIZA TU DEDO AL FINAL DE LA PANTALLA PARA REGRESAR A LA OPCION DE PAGOS.</Text>
-        <Button onPress={() => this.props.navigation.goBack()} label={'ATRAS'} />
+        <Text style={styles.pagos}>Desliza tu dedo al final de la pantalla para regresar a la opción de pagos.</Text>
+        <Button onPress={() => this.props.navigation.goBack()} label={'Atrás'} />
       </Internet>
     )
   }

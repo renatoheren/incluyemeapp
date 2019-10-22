@@ -13,13 +13,13 @@ class NotasView extends PureComponent {
     const notas = navigation.getParam('notas', []);
     return (
       <Internet>
-        <Text style={styles.text}>ELIGE UNO DE TUS CURSOS DESLIZANDO EL DEDO POR LA PANTALLA.</Text>
+        <Text style={styles.text}>A continuación, se muestran las calificaciones obtenidas del curso seleccionado.</Text>
         <View style={{marginBottom: 20}}>
           { notas && notas.length > 0 ? notas.map( nota => {
           return <Text style={{textAlign: "center"}}>{nota.evaluacion.tipo_evaluacion.nombre_tipo_evaluacion} - NOTA {nota.nota}</Text>
           } ) : <Text>SIN INFORMACIÓN</Text> }
         </View>
-        <Button onPress={() => this.props.navigation.goBack()} label={'ATRAS'} />
+        <Button onPress={() => this.props.navigation.goBack()} label={'Atrás'} />
       </Internet>
     )
   }

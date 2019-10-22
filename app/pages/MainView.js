@@ -10,8 +10,8 @@ class MainView extends PureComponent {
   render() {
     return (
       <Internet>
-        <Text style={styles.text}>BIENVENIDO ALUMNO PARA OBTENER INFORMACIÓN DESLIZA TU DEDO SOBRE LA PANTALLA Y TOCA DOS VECES LA PANTALLA PARA ESCOGER LA OPCIÓN.</Text>
-        <Button onPress={() => this.props.navigation.navigate('Login')} label={'CONTINUAR'} />
+        <Text style={styles.text}>Bienvenido alumno, para poder navegar dentro de la aplicación desliza tu dedo hacia el final de la pantalla y toca dos veces el botón continuar.</Text>
+        <Button onPress={() => this.props.navigation.navigate('Login')} label={'Continuar'} />
       </Internet>
     )
   }

@@ -28,32 +28,32 @@ class HorarioView extends PureComponent {
   render() {
     return (
       <Internet>
-        <Text style={styles.text}>PARA ESCOGER UN DIA DE CLASE DESLIZA TU DEDO POR LA PANTALLA. PARA RETROCEDER DIRIGETE AL FINAL DE LA PANTALLA</Text>
+        <Text style={styles.text}>Para escoger un día de clase, desliza tu dedo por la pantalla. Para retroceder, dirígete al final de la pantalla.</Text>
         <Button disabled={this.state.clases && this.state.clases.length > 0 ? false : true} onPress={() => this.props.navigation.navigate('HorarioDia', {
           clases: this.state.clases,
           day: this.state.startOfWeek
-        })} label={'LUNES'} />
+        })} label={'Lunes'} />
         <Button disabled={this.state.clases && this.state.clases.length > 0 ? false : true} onPress={() => this.props.navigation.navigate('HorarioDia', {
           clases: this.state.clases,
           day: moment(this.state.startOfWeek).add(1, 'days').format('YYYY-MM-DD')
-        })} label={'MARTES'} />
+        })} label={'Martes'} />
         <Button disabled={this.state.clases && this.state.clases.length > 0 ? false : true} onPress={() => this.props.navigation.navigate('HorarioDia', {
           clases: this.state.clases,
           day: moment(this.state.startOfWeek).add(2, 'days').format('YYYY-MM-DD')
-        })} label={'MIERCOLES'} />
+        })} label={'Miércoles'} />
         <Button disabled={this.state.clases && this.state.clases.length > 0 ? false : true} onPress={() => this.props.navigation.navigate('HorarioDia', {
           clases: this.state.clases,
           day: moment(this.state.startOfWeek).add(3, 'days').format('YYYY-MM-DD')
-        })} label={'JUEVES'} />
+        })} label={'Jueves'} />
         <Button disabled={this.state.clases && this.state.clases.length > 0 ? false : true} onPress={() => this.props.navigation.navigate('HorarioDia', {
           clases: this.state.clases,
           day: moment(this.state.startOfWeek).add(4, 'days').format('YYYY-MM-DD')
-        })} label={'VIERNES'} />
+        })} label={'Viernes'} />
         <Button disabled={this.state.clases && this.state.clases.length > 0 ? false : true} onPress={() => this.props.navigation.navigate('HorarioDia', {
           clases: this.state.clases,
           day: moment(this.state.startOfWeek).add(5, 'days').format('YYYY-MM-DD')
-        })} label={'SABADO'} />
-        <Button onPress={() => this.props.navigation.goBack()} label={'ATRAS'} />
+        })} label={'Sábado'} />
+        <Button onPress={() => this.props.navigation.goBack()} label={'Atrás'} />
       </Internet>
     )
   }

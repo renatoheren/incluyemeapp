@@ -49,7 +49,7 @@ class LoginView extends PureComponent {
   render() {
     return (
       <Internet>
-        <Text style={styles.text}>INGRESA A TU CUENTA. DESLIZA TU DEDO SOBRE LA PANTALLA Y TOCA DOS VECES LA PANTALLA PARA ESCOGER LA OPCIÓN.</Text>
+        <Text style={styles.text}>Para poder iniciar sesión, debes ingresar tu usuario y contraseña. Desliza tu dedo sobre la pantalla para ingresar tus credenciales y dirígete al final de la pantalla para continuar.</Text>
         <View>
           <TextInput autoCapitalize="none" onChangeText={(text) => this.setState({codigo: text})} style={styles.textinput} placeholder={"CODIGO"} />
           <TextInput secureTextEntry={true} autoCapitalize="none" onChangeText={(text) => this.setState({password: text})} style={styles.textinput} placeholder={"CONTRASEÑA"} />

@@ -32,14 +32,14 @@ class PagosView extends PureComponent {
   render() {
     return (
       <Internet>
-        <Text style={styles.text}>PARA ESCOGER ENTRE PAGOS PENDIENTES Y REALIZADOS, DESLIZA YU DEDO POR LA PANTALLA</Text>
+        <Text style={styles.text}>Para escoger entre pagos pendientes y realizados, desliza tu dedo por la pantalla y escoge la opción de tu preferencia.</Text>
         <Button disabled={this.state.disabled} onPress={() => this.props.navigation.navigate('PagosPendientes', {
           pagos: this.state.pagosPendientes
-        })} label={'PAGOS PENDIENTES'} />
+        })} label={'Pagos pendientes'} />
         <Button disabled={this.state.disabled} onPress={() => this.props.navigation.navigate('PagosRealizados', {
           pagos: this.state.pagosRealizados
-        })} label={'PAGOS REALIZADOS'} />
-        <Button onPress={() => this.props.navigation.goBack()} label={'ATRAS'} />
+        })} label={'Pagos realizados'} />
+        <Button onPress={() => this.props.navigation.goBack()} label={'Atrás'} />
       </Internet>
     )
   }

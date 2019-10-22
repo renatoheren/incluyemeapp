@@ -46,11 +46,11 @@ class CursosView extends PureComponent {
   render() {
     return (
       <Internet>
-        <Text style={styles.text}>PARA ESCOGER UN DIA DE CLASE DESLIZA TU DEDO POR LA PANTALLA. PARA RETROCEDER DIRIGETE AL FINAL DE LA PANTALLA</Text>
+        <Text style={styles.text}>Para escoger uno de los cursos en los que estás matriculado, desliza tu dedo por la pantalla. Para retroceder, dirígete al final de la pantalla.</Text>
         { this.state.cursos && this.state.cursos.length > 0 ? this.state.cursos.map( curso => {
           return <Button key={curso.id} onPress={() => this.verNotas(curso.id)} label={curso.nombre_curso} />
-        } ) : <Text>SIN CURSOS</Text> }
-        <Button onPress={() => this.props.navigation.goBack()} label={'ATRAS'} />
+        } ) : <Text>Sin cursos</Text> }
+        <Button onPress={() => this.props.navigation.goBack()} label={'Atrás'} />
       </Internet>
     )
   }

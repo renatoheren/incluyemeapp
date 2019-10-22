@@ -19,11 +19,11 @@ class MenuView extends PureComponent {
   render() {
     return (
       <Internet>
-        <Text style={styles.text}>BIENVENIDO ALUMNO PARA OBTENER INFORMACIÓN DESLIZA TU DEDO SOBRE LA PANTALLA Y TOCA DOS VECES LA PANTALLA PARA ESCOGER LA OPCIÓN</Text>
-        <Button onPress={() => this.props.navigation.navigate('Horario')} label={'HORARIO'} />
-        <Button onPress={() => this.props.navigation.navigate('Cursos')} label={'NOTAS'} />
-        <Button onPress={() => this.props.navigation.navigate('Pagos')} label={'PAGOS'} />
-        <Button onPress={this.logOut} label={'ATRAS'} />
+        <Text style={styles.text}>Bienvenido alumno, para obtener información desliza tu dedo sobre la pantalla y toca dos veces para escoger la opción.</Text>
+        <Button onPress={() => this.props.navigation.navigate('Horario')} label={'Horario'} />
+        <Button onPress={() => this.props.navigation.navigate('Cursos')} label={'Notas'} />
+        <Button onPress={() => this.props.navigation.navigate('Pagos')} label={'Pagos'} />
+        <Button onPress={this.logOut} label={'Atrás'} />
       </Internet>
     )
   }

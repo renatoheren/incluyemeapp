@@ -12,7 +12,7 @@ export default class Internet extends PureComponent {
             if( !state.isConnected ) {
                 Alert.alert(
                     'Error',
-                    'Sin conexión a internet.',
+                    'Sin conexión a internet, se cerrará el aplicativo.',
                     [
                       {text: 'Cerrar', onPress: () => RNExitApp.exitApp() },
                     ],

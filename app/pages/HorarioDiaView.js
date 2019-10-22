@@ -24,7 +24,7 @@ class HorarioDiaView extends PureComponent {
   render() {
     return (
       <Internet>
-        <Text style={styles.text}>A CONTINUACION TENDRA INFORMACION SOBRE SUS CLASES DEL DIA {this.state.day}. PARA RETROCEDER DIRIGETE A LA PARTE FINAL DE LA PANTALL  Y TOCA DOS VECES LA PANTALLA PARA ESCOGER LA OPCIÓN</Text>
+        <Text style={styles.text}>A continuación tendrá información sobre sus clases del día {this.state.day}. Para retroceder, dirígete a la parte final de la pantalla.</Text>
         <View style={styles.cursos}>
           { this.state.clases && this.state.clases.length ? this.state.clases.map( clase => {
             return <View key={clase.id} style={styles.clase}>
@@ -35,7 +35,7 @@ class HorarioDiaView extends PureComponent {
             </View>
           } ) : <Text>Sin Informacion</Text> }
         </View>
-        <Button onPress={() => this.props.navigation.goBack()} label={'ATRAS'} />
+        <Button onPress={() => this.props.navigation.goBack()} label={'Atrás'} />
       </Internet>
     )
   }
